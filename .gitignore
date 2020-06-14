@@ -5,3 +5,7 @@ SBMSworkspace/*
 */managementsys/SBMSworkspace/migrations/*
 *.vscode
 *.DS_Store
+
+managementsys/SBMSwebapp/__pycache__/*
+managementsys/db.sqlite3
+managementsys/managementsys/__pycache__/*
