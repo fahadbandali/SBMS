@@ -4,3 +4,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("hello whats up")
+
+def login(request):
+    return HttpResponse("this is the login page")
