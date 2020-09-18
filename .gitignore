@@ -10,3 +10,4 @@ managementsys/SBMSwebapp/__pycache__/*
 managementsys/SBMSwebapp/migrations/__pycache__/*
 managementsys/db.sqlite3
 managementsys/managementsys/__pycache__/*
+managementsys/SBMSwebapp/migrations/*
