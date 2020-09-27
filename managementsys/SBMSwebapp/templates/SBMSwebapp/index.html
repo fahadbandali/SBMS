@@ -7,7 +7,7 @@
     <body>
         <h1>Log in with Google</h1>
         {%if user.is_authenticated %}
-        <p>Welcome, {{ professional} !</p>
+        <p>Welcome, {{user}} !</p>
 
 
         {%else %}
@@ -16,11 +16,9 @@
         {% endif %}
     </body> -->
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="google-signin-client_id" content="749267782652-v9vdigcvhb9c38socnv39stkjndvr503.apps.googleusercontent.com">
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <style>
             h1 {text-align: center;}
@@ -33,7 +31,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            } 
+            }
+            .center-about{
+                padding: 20px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
         </style>
         <title>SB Management System</title>
@@ -46,7 +50,12 @@
                         
                 </div>
                     <div class = "center-google">
-                        <div class="g-signin2" data-width="400" data-height="50"data-longtitle="true"></div>
+                        <a class="btn btn-primary" type="button" role ="button" href="{% provider_login_url 'google' %}">Log in with Google</a>
+                    </div>
+                    <div class = "center-about">
+                        <a class="btn btn-danger" type="button" role ="button">About</a>
+                    </div>   
+                        <!-- <div class="g-signin2" data-width="400" data-height="50"data-longtitle="true"></div>
                                 <script>
                                 function onSuccess(googleUser) {
                                     console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
@@ -67,8 +76,8 @@
                                 }
                                 </script>
                             
-                                <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-                    </div>
+                                <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
+                    
             </div>
          </body>
 </html>
