@@ -1,20 +1,5 @@
 {% load socialaccount %}
 <html>
-    <!-- <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <title>Service Management System</title>
-    </head>
-    <body>
-        <h1>Log in with Google</h1>
-        {%if user.is_authenticated %}
-        <p>Welcome, {{user}} !</p>
-
-
-        {%else %}
-        <h1> Click below to log in</h1>
-        <a href="{% provider_login_url 'google' %}">Login with Google</a>
-        {% endif %}
-    </body> -->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -55,29 +40,6 @@
                     <div class = "center-about">
                         <a class="btn btn-danger" type="button" role ="button">About</a>
                     </div>   
-                        <!-- <div class="g-signin2" data-width="400" data-height="50"data-longtitle="true"></div>
-                                <script>
-                                function onSuccess(googleUser) {
-                                    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-                                }
-                                function onFailure(error) {
-                                    console.log(error);
-                                }
-                                function renderButton() {
-                                    gapi.signin2.render('my-signin2', {
-                                    'scope': 'profile email',
-                                    'width': 20,
-                                    'height': 20,
-                                    'longtitle': true,
-                                    'theme': 'light',
-                                    'onsuccess': onSuccess,
-                                    'onfailure': onFailure
-                                    });
-                                }
-                                </script>
-                            
-                                <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
-                    
             </div>
          </body>
 </html>
